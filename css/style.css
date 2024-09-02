@@ -993,8 +993,6 @@ button:focus {
   background-image: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
 }
 
-/* projects Area css
-============================================================================================ */
 .projects_area {
   background: #f9f9ff;
 }
@@ -1027,9 +1025,7 @@ button:focus {
   text-align: center;
   margin-bottom: 30px;
   height: 400px;
-  /* Fixed height */
   width: 100%;
-  /* Adjust as needed or set a fixed width */
   box-sizing: border-box;
 }
 
@@ -1058,7 +1054,6 @@ button:focus {
   color: #777777;
   margin-bottom: 0px;
   flex-grow: 1;
-  /* Pushes the button to the bottom */
 }
 
 .projects_item .main_btn {
@@ -1140,8 +1135,21 @@ svg defs linearGradient stop:nth-child(3) {
   margin: 0 50px;
 }
 
+#email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #474747;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 0 50px;
+}
+
 @media (max-width: 992px) {
   .contact_icon {
+    margin: 0 10px;
+  }
+  #email {
     margin: 0 10px;
   }
 }
@@ -1161,6 +1169,28 @@ svg defs linearGradient stop:nth-child(3) {
   font-weight: 400;
   margin: 10px;
   font-size: 20px;
+}
+
+.contact_icon:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+#email i {
+  align-items: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#email .email-text {
+  font-weight: 400;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#email:hover {
+  color: #007bff;
+  transform: scale(1.1);
 }
 
 .contact-section .box .icon {
