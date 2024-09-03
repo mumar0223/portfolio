@@ -1125,17 +1125,7 @@ svg defs linearGradient stop:nth-child(3) {
   align-items: center;
 }
 
-.contact_icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #474747;
-  transition: color 0.3s ease, transform 0.3s ease;
-  margin: 0 50px;
-}
-
-#email {
+.contact_icon, #email{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1146,49 +1136,24 @@ svg defs linearGradient stop:nth-child(3) {
 }
 
 @media (max-width: 992px) {
-  .contact_icon {
-    margin: 0 10px;
-  }
-  #email {
+  .contact_icon, #email {
     margin: 0 10px;
   }
 }
 
-.contact_icon:hover {
-  color: #007bff;
-  transform: scale(1.1);
-}
-
-.contact_icon i {
+.contact_icon i, #email i {
   align-items: center;
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.contact_icon p {
-  font-weight: 400;
+.contact_icon p, #email .email-text {
+  font-weight: 500;
   margin: 10px;
   font-size: 20px;
 }
 
-.contact_icon:hover {
-  color: #007bff;
-  transform: scale(1.1);
-}
-
-#email i {
-  align-items: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-#email .email-text {
-  font-weight: 400;
-  margin: 10px;
-  font-size: 20px;
-}
-
-#email:hover {
+.contact_icon:hover, #email:hover {
   color: #007bff;
   transform: scale(1.1);
 }
